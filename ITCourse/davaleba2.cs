@@ -1,71 +1,102 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿//using System;
+//using System.Text;
 
-namespace ITCourse
-{
-    internal class davaleba2
-    {
-        static void Main(string[] args)
-        {
-            //davaleba 1 
-            // int userAge;
-            // Console.WriteLine("Sheiyvanet tqveni asaki:");
-            // userAge = int.Parse(Console.ReadLine());
+//namespace ITCourse
+//{
+//    internal class davaleba2
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.OutputEncoding = Encoding.UTF8;
 
-            //if(userAge >= 18)
-            // {
-            //     Console.WriteLine("გილოცავ! ხმის მიცემის უფლება გაქვთ.");
-            // }
-            //else
-            // {
-            //     Console.WriteLine("სამწუხაროდ ხმის მიცემის უფლება ჯერ არ გაქვთ");
-            // }
+//            // davaleba 1
+//            int userAge;
 
-            // davaleba 2
-            //double number1, number2, number3;
+//            Console.WriteLine("Sheiyvanet tqveni asaki:");
 
-            //Console.WriteLine("Sheiyvanet 1 ricxvi:");
-            //number1 = double.Parse(Console.ReadLine());
+//            if (!int.TryParse(Console.ReadLine(), out userAge))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
 
-            //Console.WriteLine("Sheiyvanet 2 ricxvi:");
-            //number2 = double.Parse(Console.ReadLine());
+//            if (userAge >= 18)
+//            {
+//                Console.WriteLine("გილოცავ! ხმის მიცემის უფლება გაქვთ.");
+//            }
+//            else
+//            {
+//                Console.WriteLine("სამწუხაროდ ხმის მიცემის უფლება ჯერ არ გაქვთ");
+//            }
 
-            //Console.WriteLine("Sheiyvanet 3 ricxvi:");
-            //number3 = double.Parse(Console.ReadLine());
 
-            //if (number1 >= number2 && number1 >= number3)
-            //{
-            //    Console.WriteLine("Ricxvi 1 yvelaze didia");
-            //}
-            //else if (number2 >= number1 && number2 >= number3)
-            //{
-            //    Console.WriteLine("Ricxvi 2 yvelaze didia");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Ricxvi 3 yvelaze didia");
-            //}
+//            // davaleba 2
+//            double number1, number2, number3;
 
-            // davaleba 3
-            double number1, number2;
+//            Console.WriteLine("Sheiyvanet 1 ricxvi:");
+//            if (!double.TryParse(Console.ReadLine(), out number1))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
 
-            Console.WriteLine("Sheiyvanet 1 ricxvi:");
-            number1 = double.Parse(Console.ReadLine());
+//            Console.WriteLine("Sheiyvanet 2 ricxvi:");
+//            if (!double.TryParse(Console.ReadLine(), out number2))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
 
-            Console.WriteLine("Sheiyvanet 2 ricxvi:");
-            number2 = double.Parse(Console.ReadLine());
+//            Console.WriteLine("Sheiyvanet 3 ricxvi:");
+//            if (!double.TryParse(Console.ReadLine(), out number3))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
 
-            double result = 0;
+//            if (number1 >= number2 && number1 >= number3)
+//            {
+//                Console.WriteLine("Ricxvi 1 yvelaze didia");
+//            }
+//            else if (number2 >= number1 && number2 >= number3)
+//            {
+//                Console.WriteLine("Ricxvi 2 yvelaze didia");
+//            }
+//            else
+//            {
+//                Console.WriteLine("Ricxvi 3 yvelaze didia");
+//            }
 
-            if (number1 == number2)
-            {
-                result = (number1 + number2) * 3;
-            }
-            else
-            {
-                result = number1 + number2;
-            }
 
-            Console.WriteLine("Shedegi: " + result);
-        }
-    }
-}
+//            // davaleba 3
+//            double num1, num2;
+
+//            Console.WriteLine("Sheiyvanet 1 ricxvi:");
+//            if (!double.TryParse(Console.ReadLine(), out num1))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
+
+//            Console.WriteLine("Sheiyvanet 2 ricxvi:");
+//            if (!double.TryParse(Console.ReadLine(), out num2))
+//            {
+//                Console.WriteLine("araswori sheyvana");
+//                return;
+//            }
+
+//            double result;
+
+//            if (num1 == num2)
+//            {
+//                result = (num1 + num2) * 3;
+//            }
+//            else
+//            {
+//                result = num1 + num2;
+//            }
+
+//            Console.WriteLine("Shedegi: " + result);
+//        }
+//    }
+//}

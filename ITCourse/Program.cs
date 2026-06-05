@@ -1,0 +1,29 @@
+﻿using ITCourse.davaleba9;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ITCourse
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employ[] employs = new Employ[8];
+
+            employs[0] = new Employ("Anita", "Balasanyan", new DateTime(2004, 2, 19), Country.Georgia, Gender.Male, Contacts.Phone);
+            employs[1] = new Employ("Ana", "Kapanadze", new DateTime(1999, 3, 15), Country.Georgia, Gender.Female, Contacts.Email);
+
+            employs[2] = new Employ("Giorgi", "Lomidze", new DateTime(1998, 7, 20), Country.Spain, Gender.Male, Contacts.Address);
+            employs[3] = new Employ("Mariam", "Gelashvili", new DateTime(2001, 11, 2), Country.Spain, Gender.Female, Contacts.Phone);
+
+            employs[4] = new Employ("Luka", "Maisuradze", new DateTime(1997, 1, 25), Country.France, Gender.Male, Contacts.Email);
+            employs[5] = new Employ("Elene", "Chikovani", new DateTime(2002, 9, 8), Country.France, Gender.Female, Contacts.Address);
+
+            employs[6] = new Employ("Dato", "Japaridze", new DateTime(1996, 12, 30), Country.Germany, Gender.Male, Contacts.Phone);
+            employs[7] = new Employ("Nino", "Abashidze", new DateTime(2003, 4, 18), Country.Germany, Gender.Female, Contacts.Email);
+
+            Employ.PrintByCountry(employs, Country.Georgia);
+        }
+    }
+}

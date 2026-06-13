@@ -4,6 +4,7 @@ using ITCourse.davaleba9;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ITCourse.davaleba11;
 
 namespace ITCourse
 {
@@ -28,39 +29,53 @@ namespace ITCourse
             //Employ.PrintByCountry(employs, Country.Georgia);
 
             //1
-            MusicalInstrument[] instruments =
-           {
-                new Violin(),
-                new Ukulele(),
-                new Trombone(),
-                new Cello()
-            };
+            // MusicalInstrument[] instruments =
+            //{
+            //     new Violin(),
+            //     new Ukulele(),
+            //     new Trombone(),
+            //     new Cello()
+            // };
 
-            foreach (var instrument in instruments)
-            {
-                Console.WriteLine("\n--------------------");
+            // foreach (var instrument in instruments)
+            // {
+            //     Console.WriteLine("\n--------------------");
 
-                instrument.Show();
-                instrument.Desc();
-                instrument.History();
-                instrument.Sound();
-            }
+            //     instrument.Show();
+            //     instrument.Desc();
+            //     instrument.History();
+            //     instrument.Sound();
+            // }
 
-            Console.WriteLine("--------------------------------------------------------");
+            // Console.WriteLine("--------------------------------------------------------");
 
             //2
-            Worker[] workers =
-          {
-                new President(),
-                new Security(),
-                new Manager(),
-                new Engineer()
-            };
+            //  Worker[] workers =
+            //{
+            //      new President(),
+            //      new Security(),
+            //      new Manager(),
+            //      new Engineer()
+            //  };
 
-            foreach (Worker worker in workers)
-            {
-                worker.Print();
-            }
+            //  foreach (Worker worker in workers)
+            //  {
+            //      worker.Print();
+            //  }
+
+
+            //davaleba 11
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 2, 3, 7, 8, 8 };
+
+            ArrayClass arr = new ArrayClass(numbers);
+
+            arr.ShowEven();
+            arr.ShowOdd();
+
+            Console.WriteLine("Distinct values count: " + arr.CountDistinct());
+
+            int value = 3;
+            Console.WriteLine("Count of values equal to " + value + ": " + arr.EqualToValue(value));
         }
     }
 }
